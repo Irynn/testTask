@@ -1,0 +1,9 @@
+{
+  "name": "testtask",
+  "version": "0.0.1",
+  "description": "",
+  "scripts": {},
+  "devDependencies": {
+    "cypress": "^3.1.0"
+  }
+}
