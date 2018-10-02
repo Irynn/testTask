@@ -14,6 +14,10 @@ where CYPRESS_baseUrl is the link where the System Under test is running
 
 Default base url (if not specified in CLI) is http://localhost:3001
 
+To select a specific suite/spec file to be excuted, use --spec key followed by path to the desired spec file(s):
+
+`cypress run --spec 'cypress/integration/filter_spec.js,cypress/integration/movingItems_spec.js'`
+
 _How to run test in docker container:_
 
 `docker-compose run cypress ./node_modules/.bin/cypress run --config baseUrl=http://172.25.15.18:3001
