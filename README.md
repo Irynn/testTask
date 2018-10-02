@@ -1,6 +1,6 @@
 Test framework is built using cypress & docker.
 
-How to specify the URL to be tested when test is running locally/without docker:
+_How to specify the URL to be tested when test is running locally/without docker:_
 
 In CLI, go to the root directory of the project and run: 
 
@@ -14,7 +14,7 @@ where CYPRESS_baseUrl is the link where the System Under test is running
 
 Default base url (if not specified in CLI) is http://localhost:3001
 
-How to run test in docker container: 
+_How to run test in docker container:_
 
 `docker-compose run cypress ./node_modules/.bin/cypress run --config baseUrl=http://172.25.15.18:3001
 `
@@ -48,9 +48,9 @@ Steps to reproduce:
 
 => all the crew cards are visible again
 
-Expected result: the Name field and City field are also cleared
+_Expected result:_ the Name field and City field are also cleared
 
-Current result: the fields still contain the values that were input on step 1
+_Current result:_ the fields still contain the values that were input on step 1
 
 - _**IMPROVEMENT #1**_ Fix mistypes for divs with classnames .CrewMemeber-photo and .CrewMemeber-Name
 
