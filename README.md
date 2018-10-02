@@ -6,11 +6,12 @@ In CLI, go to the root directory of the project and run:
 
 `npm install`
 
-This will install the needed dependencies (cypress actually). Then run 
+This will install the necessary dependencies (cypress actually). Then run 
 
 `CYPRESS_baseUrl=http://localhost:3000 cypress run`
 
-where CYPRESS_baseUrl is the link where the System Under test is running
+where CYPRESS_baseUrl is the link where the System Under test is running.
+In case of cypress not being installed globally, use `./node_modules/.bin/cypress run`
 
 Default base url (if not specified in CLI) is http://localhost:3001
 
