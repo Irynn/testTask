@@ -47,6 +47,7 @@ describe('Moving Crew cards', function () {
         filterPage.getAppliedCrewMembers().should('have.length',0);
         filterPage.getInterviewingCrewMembers().should('have.length',1);
         filterPage.getHiredCrewMembers().should('have.length', 0);
+        filterPage.getCrewMembersCities().should('contain','hereford');
 
         filterPage.clickClearButton();
         filterPage.getAppliedCrewMembers().should('have.length',3);

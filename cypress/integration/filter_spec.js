@@ -80,8 +80,11 @@ describe('Filtering:', function() {
         filterPage.inputCityFilter(nameFilter)
             .clickSubmitButton();
         filterPage.getCrewMembersNames().should('have.length', 1);
+        filterPage.getCrewMembersCities().should('contain', nameFilter);
+
         cy.reload();
         filterPage.getCityInput().should('have.value', nameFilter);
         filterPage.getCrewMembersNames().should('have.length', 1);
+        filterPage.getCrewMembersCities().should('contain', nameFilter);
     })
 });
