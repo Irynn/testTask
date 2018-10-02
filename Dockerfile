@@ -5,7 +5,7 @@ RUN mkdir /usr/src/app
 WORKDIR /usr/src/app
 
 # install cypress
-RUN npm install cypress@2.1.0
+RUN npm install cypress@3.1.0
 
 # copy cypress files and folders
 COPY cypress /usr/src/app/cypress
