@@ -1,4 +1,4 @@
-import FilterPage from '../pageObjects/FilterPage'
+import FilterPage from '../../pageObjects/FilterPage'
 
 describe('Filtering:', function() {
 

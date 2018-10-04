@@ -1,4 +1,4 @@
-import FilterPage from '../pageObjects/FilterPage'
+import FilterPage from '../../pageObjects/FilterPage'
 
 describe('Moving Crew cards', function () {
     it('from Applied to Interviewing and Hired columns and back', function () {
